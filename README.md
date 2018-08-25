@@ -1,5 +1,5 @@
 # react-ts-redux-saga
-Starter for React Redux with Sage in Typescript.
+Starter for React Redux with Saga in Typescript.
 
 ## What's in it?
 

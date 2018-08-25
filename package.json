@@ -1,7 +1,13 @@
 {
-  "name": "client",
+  "name": "react-ts-redux-saga",
   "version": "0.1.0",
+  "description": "react typescript with redux and saga",
+  "homepage": "https://github.com/cherihung/react-ts-redux-saga",
   "private": true,
+  "author": { 
+    "name": "Chienyi Cheri Hung",
+    "url": "https://www.cyh.io/"
+  },
   "dependencies": {
     "@types/react-redux": "^6.0.6",
     "axios": "^0.18.0",

@@ -10,7 +10,8 @@ import { IPost, IPostsStoreState } from '../../types/models';
 import { IPostsDispatchProps, IPostsProps } from './component.types';
 
 const Container = styled(`div`)({
-  
+  width: '70vw',
+  margin: '0 auto',
 })
 
 const Post = styled(`div`)({

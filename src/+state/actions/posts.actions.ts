@@ -1,4 +1,4 @@
-import { IPosts } from '../../types/models';
+import { IPost } from '../../types/models';
 
 export enum ActionTypes {
     POSTS_GET_INIT = '[POSTS] Get Init',
@@ -12,7 +12,7 @@ interface IPostsGetInit {
 
 interface IPostsGetSuccess {
     readonly type: ActionTypes.POSTS_GET_SUCCESS;
-    payload: IPosts[]
+    payload: IPost[]
 }
 
 interface IPostsGetError {
@@ -28,7 +28,7 @@ export function createPostsInit(): IPostsGetInit {
     }
 }
 
-export function createPostsSuccess(response: IPosts[]): IPostsGetSuccess {
+export function createPostsSuccess(response: IPost[]): IPostsGetSuccess {
     return {
         type: ActionTypes.POSTS_GET_SUCCESS,
         payload: response,

@@ -1,13 +1,13 @@
 import { combineReducers, Reducer } from 'redux';
 
-import postsReducer, { IPostsState } from './posts.reducer';
+import { IPostsStoreState } from '../../types/models';
+import postsReducer from './posts.reducer';
 
 export interface IStoreState {
-    posts: IPostsState
+    posts: IPostsStoreState
 }
 
-type StoreStateKeys = keyof IStoreState;
-type ReducerMaps = { [K in StoreStateKeys]: Reducer<any> };
+type ReducerMaps = { [K in keyof IStoreState]: Reducer<any> };
 
 const allReducers: ReducerMaps = {
     posts: postsReducer,

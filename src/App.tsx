@@ -1,20 +1,44 @@
-import * as React from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import styled from 'react-emotion';
+import { Link } from 'react-router-dom';
 
-import logo from './logo.svg';
+const AppContainer = styled(`div`)({
+  textAlign: 'center'
+});
 
-class App extends React.Component {
+const AppHeader = styled(`header`)({
+  backgroundColor: '#222',
+  padding: '1rem',
+  marginBottom: '0.5em',
+  color: 'white',
+});
+
+const ButtonLink = styled(Link)({
+  ['button']: {
+    backgroundColor: 'yellowgreen',
+    border: 'none',
+    borderRadius: '0.25em',
+    fontSize: '1.25rem',
+    padding: '0.25em 0.5em',
+    color: 'white'
+  },
+  ['button:hover']: {
+    cursor: 'pointer',
+    backgroundColor: 'lightseagreen',
+  }
+})
+
+class App extends Component {
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
+      <AppContainer>
+        <AppHeader>
+          <h1>Choose a Feature</h1>
+        </AppHeader>
+        <ButtonLink to='/posts'>
+          <button>GET POSTS via Rest API</button>
+        </ButtonLink>
+      </AppContainer>
     );
   }
 }

@@ -1,22 +1,16 @@
 import produce from 'immer';
 
-import { IPosts } from '../../types/models';
+import { IPostsStoreState } from '../../types/models';
 import { Actions, ActionTypes } from '../actions/posts.actions';
 
-export interface IPostsState {
-  items: IPosts[] | null;
-  error: any;
-  loading: boolean;
-}
-
-const initialState: IPostsState = {
+const initialState: IPostsStoreState = {
   error: undefined,
   items: null,
   loading: false,
 }
 
 const postsReducer = (state = initialState, action: Actions) =>
-  produce(state, (draft: IPostsState) => {
+  produce(state, (draft: IPostsStoreState) => {
       switch(action.type) {
           case ActionTypes.POSTS_GET_INIT:
             draft.loading = true;

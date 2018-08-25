@@ -14,7 +14,7 @@ export function* getPostsSaga() {
   let payload;
   try {
     const response = yield call(getPosts);
-    payload = response;
+    payload = response.data;
 
     yield put(postActions.createPostsSuccess(payload));
 

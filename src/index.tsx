@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import configureStore from './store/configureStore';
 
 const history = createBrowserHistory();
 const store = configureStore(history);

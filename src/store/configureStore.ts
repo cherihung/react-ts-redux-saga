@@ -4,7 +4,7 @@ import { createLogger } from 'redux-logger';
 import createSagaMiddlware from 'redux-saga';
 
 import rootReducers from '../+state/reducers';
-
+import { watcherSaga } from './sagas';
 
 const sagaMiddleware = createSagaMiddlware();
 const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE || compose;

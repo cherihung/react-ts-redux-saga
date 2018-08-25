@@ -1,7 +1,7 @@
 import produce from 'immer';
 
 import { IPosts } from '../../types/models';
-import { Actions, ActionTypes } from '../actions/posts.action';
+import { Actions, ActionTypes } from '../actions/posts.actions';
 
 export interface IPostsState {
   items: IPosts[] | null;
@@ -15,7 +15,7 @@ const initialState: IPostsState = {
   loading: false,
 }
 
-const postsReducer = (state = initialState, action: Actions) => {
+const postsReducer = (state = initialState, action: Actions) =>
   produce(state, (draft: IPostsState) => {
       switch(action.type) {
           case ActionTypes.POSTS_GET_INIT:
@@ -29,7 +29,8 @@ const postsReducer = (state = initialState, action: Actions) => {
           case ActionTypes.POSTS_GET_ERROR:
             draft.loading = false;
             draft.error = true;
+            break;
       }
-    })};
+    });
 
 export default postsReducer;

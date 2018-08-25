@@ -11,6 +11,6 @@ Starter for React Redux with Sage in Typescript.
 - [Immer](https://github.com/mweststrate/immer) for data immutability control 
 - [Axios](https://github.com/axios/axios) fro HTTP requests
 
-#### [Github](https://github.com/cherihung) | [Twitter](https://twitter.com/cyhung)
-
 <hr>
+
+[Twitter](https://twitter.com/cyhung) | [Site](https://www.cyh.io/)

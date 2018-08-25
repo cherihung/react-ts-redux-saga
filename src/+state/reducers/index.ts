@@ -1,9 +1,9 @@
 import { combineReducers, Reducer } from 'redux';
 
-import postsReducer from './posts.reducer';
+import postsReducer, { IPostsState } from './posts.reducer';
 
 export interface IStoreState {
-    posts: any
+    posts: IPostsState
 }
 
 type StoreStateKeys = keyof IStoreState;
@@ -13,6 +13,6 @@ const allReducers: ReducerMaps = {
     posts: postsReducer,
 };
 
-const rootReducer = combineReducers({..allReducers});
+const rootReducer = combineReducers({...allReducers});
 
 export default rootReducer;

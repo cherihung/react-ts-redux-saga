@@ -8,6 +8,7 @@ Starter for React Redux with Sage in Typescript.
 - [Redux Saga](https://github.com/redux-saga/redux-saga) for state middleware 
 - [Connected React Router](https://github.com/supasate/connected-react-router) for router state binding to Redux
 - [React Emotion](https://github.com/emotion-js/emotion) for CSS-inJ-JS aka styled components
+- [Immer](https://github.com/mweststrate/immer) for data immutability control 
 - [Axios](https://github.com/axios/axios) fro HTTP requests
 
 #### [Github](https://github.com/cherihung) | [Twitter](https://twitter.com/cyhung)

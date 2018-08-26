@@ -9,7 +9,8 @@ Starter for React Redux with Saga in Typescript.
 - [Connected React Router](https://github.com/supasate/connected-react-router) for router state binding to Redux
 - [React Emotion](https://github.com/emotion-js/emotion) for CSS-inJ-JS aka styled components
 - [Immer](https://github.com/mweststrate/immer) for data immutability control 
-- [Axios](https://github.com/axios/axios) fro HTTP requests
+- [Axios](https://github.com/axios/axios) for HTTP requests
+- [Storybook](https://storybook.js.org/) as a workshop environment for component development
 
 <hr>
 

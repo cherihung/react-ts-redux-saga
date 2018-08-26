@@ -8,29 +8,11 @@ import * as postsActions from '../../+state/actions/posts.actions';
 import { IStoreState } from '../../+state/reducers';
 import { IPost, IPostsStoreState } from '../../types/models';
 import { IPostsDispatchProps, IPostsProps } from './component.types';
+import { Post } from './Post';
 
 const Container = styled(`div`)({
   width: '70vw',
   margin: '0 auto',
-})
-
-const Post = styled(`div`)({
-  padding: '1rem',
-  marginBottom: '0.5em',
-  ['h2']: {
-    textTransform: 'capitalize',
-    margin: '0.5em 0 0'
-  },
-  ['p']: {
-    padding: '0',
-    margin: '0',
-    fontSize: '1.5em',
-    lineHeight: '1.25em'
-  },
-  ['label']: {
-    backgroundColor: 'beige',
-    padding: '0.1em',
-  }
 })
 
 class Posts extends Component<IPostsProps> {

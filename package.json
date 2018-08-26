@@ -29,9 +29,11 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
+    "@storybook/react": "^4.0.0-alpha.3",
     "@types/history": "^4.7.0",
     "@types/jest": "^23.3.1",
     "@types/node": "^10.9.1",
@@ -39,6 +41,8 @@
     "@types/react-dom": "^16.0.7",
     "@types/react-router-dom": "^4.3.0",
     "@types/redux-logger": "^3.0.6",
+    "@types/storybook__react": "^3.0.9",
+    "awesome-typescript-loader": "^5.2.0",
     "redux-devtools": "^3.4.1",
     "typescript": "^3.0.1"
   }

@@ -7,7 +7,7 @@ import rootReducers from '../+state/reducers';
 import { watcherSaga } from './sagas';
 
 const sagaMiddleware = createSagaMiddlware();
-const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE || compose;
+const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const getAppliedMiddleware = (routerhistory: any) => {
     if (process.env.NODE_ENV === 'development') {

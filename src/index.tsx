@@ -25,6 +25,6 @@ ReactDOM.render(
       </Router>
     </ConnectedRouter>
   </Provider>,
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement,
 );
 registerServiceWorker();

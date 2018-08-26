@@ -3,7 +3,7 @@ import styled from 'react-emotion';
 import { Link } from 'react-router-dom';
 
 const AppContainer = styled(`div`)({
-  textAlign: 'center'
+  textAlign: 'center',
 });
 
 const AppHeader = styled(`header`)({
@@ -20,13 +20,13 @@ const ButtonLink = styled(Link)({
     borderRadius: '0.25em',
     fontSize: '1.25rem',
     padding: '0.25em 0.5em',
-    color: 'white'
+    color: 'white',
   },
   ['button:hover']: {
     cursor: 'pointer',
     backgroundColor: 'lightseagreen',
-  }
-})
+  },
+});
 
 const App: SFC = () => (
   <AppContainer>

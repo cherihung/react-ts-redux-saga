@@ -4,7 +4,7 @@
   "description": "react typescript with redux and saga",
   "homepage": "https://github.com/cherihung/react-ts-redux-saga",
   "private": true,
-  "author": { 
+  "author": {
     "name": "Chienyi Cheri Hung",
     "url": "https://www.cyh.io/"
   },

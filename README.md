@@ -3,7 +3,7 @@ Starter for React Redux with Saga in Typescript.
 
 ## What's in it?
 
-- Using [TypeScript-React-Starter](https://github.com/Microsoft/TypeScript-React-Starter) for a solid Typescript foundation with the usual Create React App goodies
+- Using [Create React App](https://github.com/facebook/create-react-app) for a solid start
 - [React Redux](https://github.com/reduxjs/react-redux) for state management
 - [Redux Saga](https://github.com/redux-saga/redux-saga) for state middleware 
 - [Connected React Router](https://github.com/supasate/connected-react-router) for router state binding to Redux

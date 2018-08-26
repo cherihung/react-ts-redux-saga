@@ -20,7 +20,7 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <Router>
         <Switch>
-          {AppRoutes.map((route, i) => <Route key={i} {...route} />)}
+          {AppRoutes.map(route => <Route key={route.path} {...route} />)}
         </Switch>
       </Router>
     </ConnectedRouter>

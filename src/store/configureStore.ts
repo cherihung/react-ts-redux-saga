@@ -16,12 +16,11 @@ const getAppliedMiddleware = (routerhistory: any) => {
             routerMiddleware(routerhistory),
             createLogger(),
         );
-    } else {
-        return applyMiddleware(
-            sagaMiddleware,
-            routerMiddleware(routerhistory),
-        )
-    }
+    } 
+    return applyMiddleware(
+      sagaMiddleware,
+      routerMiddleware(routerhistory),
+    )
 }
 
 const configureStore = (routerHistory: any, preloadedState?: any) => {

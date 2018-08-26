@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { SFC } from 'react';
 import styled from 'react-emotion';
 import { Link } from 'react-router-dom';
 
@@ -28,19 +28,15 @@ const ButtonLink = styled(Link)({
   }
 })
 
-class App extends Component {
-  public render() {
-    return (
-      <AppContainer>
-        <AppHeader>
-          <h1>Choose a Feature</h1>
-        </AppHeader>
-        <ButtonLink to='/posts'>
-          <button>GET POSTS via Rest API</button>
-        </ButtonLink>
-      </AppContainer>
-    );
-  }
-}
+const App: SFC = () => (
+  <AppContainer>
+    <AppHeader>
+      <h1>Choose a Feature</h1>
+    </AppHeader>
+    <ButtonLink to="/posts">
+      <button type="button">GET POSTS via Rest API</button>
+    </ButtonLink>
+  </AppContainer>
+);
 
 export default App;

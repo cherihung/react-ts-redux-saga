@@ -57,8 +57,8 @@ class Posts extends Component<IPostsProps> {
   }
 
   private renderRow = (items: IPost[]) => {
-    return items.map((item: IPost, index: number) => (
-      <Post key={index}>
+    return items.map((item: IPost) => (
+      <Post key={item.id}>
         <label>Post Id: {item.id}</label>
         <h2>{item.title}</h2>
         <p>{item.body}</p>

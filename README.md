@@ -14,4 +14,6 @@ Starter for React Redux with Saga in Typescript.
 
 <hr>
 
+A version of this in JS and not Typescript is found [here](https://github.com/cherihung/react-ts-redux-saga).
+
 [Twitter](https://twitter.com/cyhung) | [Site](https://www.cyh.io/)
